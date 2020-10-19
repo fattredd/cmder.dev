@@ -1,26 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>battecode.cmder.dev</id>
-        <version>1.1.3.1</version>
-        <title>Cmder w/ Tweaks by Batte</title>
-        <authors>Samuel Vasko</authors>
-        <owners>jbatte47</owners>
+        <id>fattredd.cmder.dev</id>
+        <version>1.3.16</version>
+        <title>Cmder w/ Tweaks by fattredd</title>
+        <authors>JButler</authors>
+        <owners>fattredd</owners>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-        <projectUrl>https://github.com/jbatte47/cmder.dev</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/jbatte47/cmder.dev/master/icons/icon_48.png</iconUrl>
+        <projectUrl>https://github.com/fattredd/cmder.dev</projectUrl>
+        <iconUrl>https://github.com/fattredd/cmder.dev/master/icons/icon_48.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Cmder is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout. Looking sexy from the start.</description>
         <summary>Portable console emulator for Windows</summary>
-        <releaseNotes>Added missing libraries</releaseNotes>
+        <releaseNotes>Migrated from old maintainer</releaseNotes>
         <copyright>Copyright (c) 2013 Samuel Vasko</copyright>
         <tags>portable console command-line terminal</tags>
         <dependencies>
+            <dependency id="vcredist2010" version="10.0.40219.2" />
             <dependency id="7zip.commandline" />
             <dependency id="git.install" />
         </dependencies>
     </metadata>
     <files>
-        <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+        <file src="tools\**" target="tools" />
     </files>
 </package>
